@@ -7,6 +7,7 @@ import { Popular } from './Popular'
 import { LastEpisodes } from './LastEpisodes'
 import { SideBar } from './SideBar'
 import { NavBar } from '../NavBar/NavBar'
+import { Footer } from '../Footer/Footer'
 
 export const Home = () => {
 
@@ -18,7 +19,7 @@ export const Home = () => {
 
   const styles = {
     main : 'flex flex-col items-center w-full font-nunito',
-    content: 'w-full max-w-[1200px]',
+    content: 'w-full max-w-[1200px] pb-20 sm:pb-40',
     header: `h-[80px] border-b-[12px]  mb-10 mt-20 rounded-t-2xl flex items-center px-4 ${theme == 'light' ? 'bg-primary-400 border-black' : 'bg-primary-300/75 border-primary-100/70'}`,
     headerTxt: 'font-bold text-xl sm:text-2xl',
     body: 'grid lg:grid-cols-2 w-full py-5',
@@ -67,6 +68,7 @@ export const Home = () => {
         </div>
       </div>
 
+      <Footer theme={theme} setTheme={setTheme} element={element}/>
 
     </section>
 

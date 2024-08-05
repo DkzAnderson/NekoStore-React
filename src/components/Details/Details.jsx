@@ -5,6 +5,7 @@ import { Season } from './Season'
 import { NavBar } from '../NavBar/NavBar'
 import './Scroll.css'
 import { useParams } from 'react-router-dom'
+import { Footer } from '../Footer/Footer'
 
 export const Details = () => {
 
@@ -25,8 +26,8 @@ export const Details = () => {
 
   const styles = {
 
-    main: 'p-4 pb-20 sm:pb-10 w-full flex gap-10 flex-col min-h-[90vh] max-w-[1200px]',
-    content: 'flex relative size-full justify-center',
+    main: 'p-4 pb-20 sm:pb-40 w-full flex gap-10 flex-col min-h-[90vh] max-w-[1200px]',
+    content: 'flex relative size-full justify-center pb-20',
     detailsBox: `z-20 w-full grid gap-5 p-2 rounded-lg ${theme == 'light' ? 'bg-slate-500/75 ' : 'bg-slate-900/75'}`,
     title: 'text-3xl font-bold',
     tag : `px-2 py-0.5 text-white font-bold rounded-full place-self-start ${theme == 'light' ? 'bg-secondary-400 text-black' : 'bg-primary-100'}`,
@@ -108,6 +109,8 @@ export const Details = () => {
           />
         </div>
       </div>
+
+      <Footer theme={theme} setTheme={setTheme} element={element}/>
     </section>
   )
 }

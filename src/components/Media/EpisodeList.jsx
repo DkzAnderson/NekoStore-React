@@ -13,8 +13,8 @@ export const EpisodeList = ({episodes,theme,id,s}) => {
     let styles = {
         main: `w-full p-5 rounded-lg flex flex-col gap-5 items-center ${theme == 'light' ? 'bg-gradient-to-bl from-primary-100 to-primary-400/50' : 'bg-gradient-to-br from-primary-300/75 to-primary-100/50'}`,
         btn: `flex gap-5 items-center group ${theme == 'light' ? 'text-secondary-400 ' : 'text-white hover:text-primary-100'}`,
-        btnTxt: `text-2xl duration-200 group-hover:tracking-widest ${theme == 'light' ? '' : ''}`,
-        icon: `text-2xl duration-300 animate-pulse`,
+        btnTxt: ` sm:text-2xl duration-200 group-hover:tracking-widest ${theme == 'light' ? '' : ''}`,
+        icon: `text-lg sm:text-2xl duration-300 animate-pulse`,
 
         mainList : 'w-full py-2 flex-col gap-5 duration-300 ',
         itemList : `flex gap-5 group rounded cursor-pointer ${theme == 'light' ? 'hover:bg-primary-400' : 'hover:bg-primary-300'}`,

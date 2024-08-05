@@ -6,6 +6,7 @@ import { BsFillArrowRightCircleFill } from "react-icons/bs"
 import { BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { MdCancel } from "react-icons/md";
 import { EpisodeList } from './EpisodeList';
+import { Footer } from '../Footer/Footer';
 
 export const Media = () => {
   const [theme, setTheme] = React.useState(
@@ -25,7 +26,7 @@ export const Media = () => {
 
   const styles = {
     main : 'w-full flex flex-col font-nunito',
-    content: 'flex flex-col items-center w-full mt-5 px-2 max-w-[1200px]',
+    content: 'flex flex-col items-center w-full mt-5 px-2 max-w-[1200px] pb-20 sm:pb-40',
     mediaBox: `flex w-full flex-col gap-2 max-w-[1000px] rounded-lg ${theme == 'light' ? 'bg-primary-400/85' : 'bg-primary-300'}`,
     iframe: 'w-full h-[350px] md:h-[500px] rounded-t-lg',
     lowerBox: 'flex w-full justify-between p-2',
@@ -124,6 +125,7 @@ export const Media = () => {
           </div>
         </div>
       </div>
+      <Footer theme={theme} setTheme={setTheme} element={element}/>
     </section>
   )
 }

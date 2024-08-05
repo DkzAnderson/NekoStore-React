@@ -12,7 +12,7 @@ export const Footer = ({theme}) => {
     content: 'w-[90%] max-w-[1200px] flex flex-col gap-5 sm:flex-row items-center sm:items-start',
     txtBox: 'w-full flex flex-col items-center', 
     title : 'font-bold text-2xl sm:text-3xl',
-    txt : 'font-light',
+    txt : 'font-light text-center',
     span : 'flex items-center gap-2',
     txt2 : 'font-light',
     copyRightIcon: 'text-2xl',
